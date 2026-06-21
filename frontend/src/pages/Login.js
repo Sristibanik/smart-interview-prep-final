@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3001/api/auth/login",
+  "https://smart-interview-prep-final.onrender.com/api/auth/login",
         {
           email,
           password,

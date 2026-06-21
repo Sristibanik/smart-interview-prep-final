@@ -13,11 +13,14 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:3001/api/auth/signup", {
-        name,
-        email,
-        password,
-      });
+      const res = await axios.post(
+  "https://smart-interview-prep-final.onrender.com/api/auth/signup",
+  {
+    name,
+    email,
+    password,
+  }
+);
 
       console.log(res.data);
 
