@@ -2,9 +2,16 @@ const mongoose = require("mongoose");
 
 const progressSchema = new mongoose.Schema({
   questionId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Question",
+    type: String,
+    required: true,
+  },
+  solvedAt: {
+    type: Date,
+    default: Date.now,
   },
 });
 
-module.exports = mongoose.model("Progress", progressSchema);
+module.exports = mongoose.model(
+  "Progress",
+  progressSchema
+);
