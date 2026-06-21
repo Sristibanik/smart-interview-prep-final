@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #ff4ecd, #ff8ae2);
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links button {
+  margin-left: 15px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout {
+  background: #ff4d6d;
+  color: white;
+}

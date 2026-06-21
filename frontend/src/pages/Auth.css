@@ -1,0 +1,97 @@
+.auth-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #9333ea, #24243e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Background animation */
+@keyframes gradient {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
+/* LEFT SIDE */
+.auth-left {
+  width: 50%;
+  padding: 80px;
+}
+
+.features p {
+  margin: 10px 0;
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stats h2 {
+  margin: 0;
+}
+
+/* RIGHT CARD */
+.auth-card {
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+/* Toggle buttons */
+.toggle {
+  display: flex;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle .active {
+  background: #7c3aed;
+  border-radius: 10px;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* MAIN BUTTON */
+.main-btn {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #7c3aed, #9333ea);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.main-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #9333ea;
+}
